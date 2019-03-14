@@ -22,7 +22,7 @@
 ##Quick Fix to get Environment working 
 ### *(note that CocoaPods could get deprecated in the future)
 `sudo gem uninstall cocoapods`<br>
-`..* yes, remove executables`
+..* `yes, remove executables`
 
 `sudo gem install cocoapods -v 1.5.3`
 
