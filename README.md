@@ -19,7 +19,7 @@
 
 `tns update (if you need to update anything)`
 
-##Quick Fix to get Environment working 
+## Quick Fix to get Environment working 
 ### *(note that CocoaPods could get deprecated in the future)
 `sudo gem uninstall cocoapods`<br>
   * `yes, remove executables`
