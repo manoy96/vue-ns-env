@@ -4,7 +4,7 @@
         <TabView android:tabBackgroundColor="#53ba82"
                  android:tabTextColor="#c4ffdf"
                  android:selectedTabTextColor="#ffffff"
-                 androidSelectedTabHighlightColor="#ffffff">
+                 androidSelectedTabHighlightColor="#ffffff" >
             <TabViewItem title="Tab 1">
                 <GridLayout columns="*" rows="*">
                     <Label class="message" :text="msg" col="0" row="0"/>
