@@ -1,2 +1,10 @@
 // Global SCSS styling
 // @see https://docs.nativescript.org/ui/styling
+@import '~nativescript-theme-core/css/core.light.css';
+
+.myInput {
+    width: 90%;
+    border-color: #666;
+    border-width: 2;
+    border-radius: 20;
+}
