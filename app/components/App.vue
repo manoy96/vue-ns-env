@@ -7,12 +7,13 @@
                  androidSelectedTabHighlightColor="#ffffff" >
 
             <TabViewItem title="Tab 1">
-                <!-- <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*,*">
+                <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*,*">
                     <Label class="h1" text="Where To?" col="1" row="0"/>
                     <TextField class="m-x-auto" :text="textFieldValue" hint="Current Location" col="1" row="1" />
                     <TextField class="m-x-auto" :text="textFieldValue" hint="Destination" col="1" row="2" />
-                </GridLayout> -->
-                <FlexboxLayout flexDirection="column" 
+                </GridLayout>
+                
+                <!-- <FlexboxLayout flexDirection="column" 
                                 alignItems="center"
                                 justifyConten="space-between" >
                                 
@@ -21,7 +22,7 @@
                     <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Current Location" col="1" row="1" />
                     <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Destination" col="1" row="2" />
 
-                </FlexboxLayout>
+                </FlexboxLayout> -->
             </TabViewItem>
 
             <TabViewItem title="Tab 2">
