@@ -1,21 +1,37 @@
 <template>
-    <Page>
-        <!-- <ActionBar title="Welcome to NativeScript-Vue!" android:flat="true"/> -->
-        <TabView android:tabBackgroundColor="#53ba82"
-                 android:tabTextColor="#c4ffdf"
-                 android:selectedTabTextColor="#ffffff"
-                 androidSelectedTabHighlightColor="#ffffff" >
+  <Page>
+    <!-- <ActionBar title="Welcome to NativeScript-Vue!" android:flat="true"/> -->
+    <TabView
+      android:tabBackgroundColor="#53ba82"
+      android:tabTextColor="#c4ffdf"
+      android:selectedTabTextColor="#ffffff"
+      androidSelectedTabHighlightColor="#ffffff"
+    >
+      <TabViewItem title="Tab 1">
+        <GridLayout columns="*" rows="*,*,*,*,*,*,*,*">
+          <Label class="h1 m-x-auto" text="Where To?" col="0" row="0"/>
+          <Label class="h2 m-l-30" text="Starting Point" col="0" row="1"/>
+          <TextField
+            class="m-x-auto p-l-15 myInput"
+            :text="textFieldValue"
+            hint="Current Location"
+            col="0"
+            row="2"
+          />
+          <Label class="h2 m-l-30" text="Destination" col="0" row="3"/>
+          <TextField
+            class="m-x-auto p-l-15 myInput"
+            :text="textFieldValue"
+            hint="Destination"
+            col="0"
+            row="4"
+          />
 
-            <TabViewItem title="Tab 1">
-                <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*,*">
-                    <Label class="h1" text="Where To?" col="1" row="0"/>
-                    <Label class="h2" text="Where To?" col="1" row="0"/>
-                    <TextField class="m-x-auto" :text="textFieldValue" hint="Current Location" col="1" row="1" />
-                    <Label class="h2" text="Where To?" col="1" row="0"/>
-                    <TextField class="m-x-auto" :text="textFieldValue" hint="Destination" col="1" row="2" />
-                </GridLayout>
+          <StackLayout class="hr-light m-10" col="0" row="5" ></StackLayout>
+          
+        </GridLayout>
 
-                <!-- <FlexboxLayout flexDirection="column" 
+        <!-- <FlexboxLayout flexDirection="column" 
                                 alignItems="center"
                                 justifyConten="space-between" >
                                 
@@ -24,49 +40,49 @@
                     <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Current Location" col="1" row="1" />
                     <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Destination" col="1" row="2" />
 
-                </FlexboxLayout> -->
-            </TabViewItem>
+        </FlexboxLayout>-->
+      </TabViewItem>
 
-            <TabViewItem title="Tab 2">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 2 Content" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
+      <TabViewItem title="Tab 2">
+        <GridLayout columns="*" rows="*">
+          <Label class="message" text="Tab 2 Content" col="0" row="0"/>
+        </GridLayout>
+      </TabViewItem>
 
-            <TabViewItem title="Tab 3">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 3 Content" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
-
-        </TabView>
-    </Page>
+      <TabViewItem title="Tab 3">
+        <GridLayout columns="*" rows="*">
+          <Label class="message" text="Tab 3 Content" col="0" row="0"/>
+        </GridLayout>
+      </TabViewItem>
+    </TabView>
+  </Page>
 </template>
 
 <script >
-  export default {
-    data() {
-      return {
-        msg: 'Where To?'
-      }
-    }
+export default {
+  data() {
+    return {
+      msg: "Where To?"
+    };
   }
+};
 </script>
 
 <style scoped>
-    ActionBar {
-        background-color: #c11327;
-        color: #ffffff;
-    }
+ActionBar {
+  background-color: #c11327;
+  color: #ffffff;
+}
 
-    .message {
-        vertical-align: center;
-        text-align: center;
-        font-size: 20;
-        color: #333333;
-    }
-    .myInput {
-        margin: 0 auto;
-        border: solid 2px #2e3140;
-    }
+.message {
+  vertical-align: center;
+  text-align: center;
+  font-size: 20;
+  color: #333333;
+}
+.myInput {
+  border-width: 2;
+  border-color: #86858c;
+  border-radius: 30;
+}
 </style>
