@@ -8,7 +8,7 @@
       androidSelectedTabHighlightColor="#ffffff"
     >
       <TabViewItem title="Tab 1">
-        <GridLayout columns="*" rows="*,*,*,*,*,*,*,*">
+        <GridLayout columns="*" rows="*,*,*,*,*,*,*,*,*,*">
           <Label class="h1 m-x-auto" text="Where To?" col="0" row="0"/>
           <Label class="h2 m-l-30" text="Starting Point" col="0" row="1"/>
           <TextField
@@ -27,8 +27,11 @@
             row="4"
           />
 
-          <StackLayout class="hr-light m-10" col="0" row="5" ></StackLayout>
-          
+          <StackLayout class="hr-light m-20" col="0" row="5" ></StackLayout>
+
+          <Label class="h2 m-l-30" text="Recent Trips" col="0" row="6"/>
+          <Label class="h2 m-x-auto" text="Utah Valley University" col="0" row="7"  />
+
         </GridLayout>
 
         <!-- <FlexboxLayout flexDirection="column" 
