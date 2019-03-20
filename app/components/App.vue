@@ -10,7 +10,7 @@
       selectedTabTextColor="#ffffff"
       tabTextColor="#2e3140"
     >
-      <TabViewItem title="Plan" >
+      <TabViewItem title="Plan">
         <GridLayout columns="*" rows="*,*,*,*,*,*,*,*,*,*,*">
           <Label class="h1 m-x-auto" text="Where To?" col="0" row="0"/>
           <Label class="h2 m-l-30" text="Starting Point" col="0" row="1"/>
@@ -33,21 +33,12 @@
           <StackLayout class="hr-light m-20" col="0" row="5"></StackLayout>
 
           <Label class="h2 m-l-30" text="Recent Trips" col="0" row="6"/>
-          <Label class="h2 m-x-auto myRecent" text="Utah Valley University" col="0" row="7" />
-          <Label class="h2 m-x-auto myRecent" text="Walmart" col="0" row="8" />
-          <Button class="h2 myButton" text="GO" @tap="onButtonTap" col="0" row="9" />
+          <Label class="h2 m-x-auto myRecent" text="Utah Valley University" col="0" row="7"/>
+          <Label class="h2 m-x-auto myRecent" text="Walmart" col="0" row="8"/>
+          <Button class="h2 myButton" text="GO" @tap="onButtonTap" col="0" row="9"/>
+          <Label class="h2 m-l-30" text="Recent Trips" col="0" row="6"/>
+          <Label class="far" style="font-size: 50em; color: blue" text="&#xf2b9;"></Label>
         </GridLayout>
-
-        <!-- <FlexboxLayout flexDirection="column" 
-                                alignItems="center"
-                                justifyConten="space-between" >
-                                
-                    <Label class="h1 m-y-15" text="Where To?" col="1" row="0"/>
-                    <Label class="h2 p-l-20 m-b-30 " alignSelf="flex-start" text="Current Location" col="1" row="0"/>
-                    <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Current Location" col="1" row="1" />
-                    <TextField class="p-y-5 p-x-15 myInput" :text="textFieldValue" hint="Destination" col="1" row="2" />
-
-        </FlexboxLayout>-->
       </TabViewItem>
 
       <TabViewItem title="Tab 2">
@@ -81,7 +72,7 @@ ActionBar {
   color: #ffffff;
 }
 tabView {
-   tab-background-color: #c11327;
+  tab-background-color: #c11327;
 }
 
 .message {
@@ -96,15 +87,15 @@ tabView {
   border-radius: 30;
 }
 .myRecent {
-   border-width: 2;
-   border-top-color: #c9c9c9;
-   width: 90%;
-   text-align: center;
+  border-width: 2;
+  border-top-color: #c9c9c9;
+  width: 90%;
+  text-align: center;
 }
 .myButton {
-   width: 90%;
-   background-color: #86858c;
-   color: #ffffff;
-   border-radius: 15;
+  width: 90%;
+  background-color: #86858c;
+  color: #ffffff;
+  border-radius: 15;
 }
 </style>
